@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
-import './Child.css';
 
-class Child extends Component {
-  render() {
+const Child = (props) => {
+
     return (
-      <div className="Child">
-        Child
-      </div>
-    );
-  }
+        <div>
+            Child Component Input: 
+            
+            <input
+                value={props.value}
+                onChange={e => {
+                    props.changeHandler(e.target.value)
+                }}
+            />
+        </div>
+    )
 }
 
-export default Child;
+
+
+
+export default Child

@@ -1,0 +1,17 @@
+p:nth-child(2){
+    color: red;
+}
+input{
+    outline: none;
+}
+input:focus{
+    border: solid tomato 3px;
+}
+input[type="number"]:disabled{
+    /* background-color: rgb(133, 136, 133); */
+    border: dashed red 3px;
+    text-align: center;
+}
+button:hover{
+    border: solid rgb(114, 114, 111) 3px;
+}

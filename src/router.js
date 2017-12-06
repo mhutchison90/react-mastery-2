@@ -14,10 +14,11 @@ import Child from './components/Parent/Child/Child'
 export default (
     <Switch>
         <Route exact path='/' component={App} />
-        <Route path="/parent" render={() => <div>RENDER THIS PLEASE</div>}/>
+        <Route path="/parentrender" render={() => <div>RENDER THIS PLEASE</div>}/>
         <Route  path='/about' component={About} />
         <Route  path='/contact' component={Contact} />
         <Route  path='/parent' component={Parent} />
         <Route  path='/parent/child' component={Child} />
+        <Route  path='/testing' component={Child} />
     </Switch>
 )
