@@ -14,6 +14,7 @@ class App extends Component {
       <Link to='/about'> About </Link>
       <Link to='/contact'> Contact </Link>
       <Link to='/parent'> Parent </Link>
+      <Link to='/testing'> testing </Link>
       <Link to='/parentrender'>    Router Render </Link>
       {/* <DumbComponent/> */}
         {router}

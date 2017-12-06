@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import './Child.css';
 
-class Child extends Component {
-  render() {
-    return (
-      <div className="Child">
-        Child
-        <br/>
-        <br/>
-        <br/>
-        This is the Child Component. It is being nested in the parent Component.
-      </div>
-    );
-  }
+export class Child extends Component {
+    render() {
+        console.log('from child: ', this.props.value)
+        return (
+
+            <div>
+            <br />
+                Child Component Input: <input
+                    vvalue={this.props.value}
+                    onChange={e => {
+                        this.props.changeHandler(e.target.value)}}
+                />
+            </div>
+        )
+    }
 }
-
-export default Child;
