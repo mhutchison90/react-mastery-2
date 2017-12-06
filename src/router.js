@@ -7,7 +7,7 @@ import App from './App'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 import Parent from './components/Parent/Parent'
-import {Child} from './components/Parent/Child/Child'
+import Child from './components/Parent/Child/Child'
 
 
 

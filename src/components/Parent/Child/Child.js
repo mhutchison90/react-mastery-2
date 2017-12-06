@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
 
-export class Child extends Component {
-    render() {
-        console.log('from child: ', this.props.value)
-        return (
+const Child = (props) => {
 
-            <div>
-            <br />
-                Child Component Input: <input
-                    vvalue={this.props.value}
-                    onChange={e => {
-                        this.props.changeHandler(e.target.value)}}
-                />
-            </div>
-        )
-    }
+    return (
+        <div>
+            Child Component Input: 
+            
+            <input
+                value={props.value}
+                onChange={e => {
+                    props.changeHandler(e.target.value)
+                }}
+            />
+        </div>
+    )
 }
+
+
+
+
+export default Child
